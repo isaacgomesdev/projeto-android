@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url('./fontes/Android.ttf') format(truetype);
+}
+
+:root{
+    --cor01:#6DC2ED;
+    --cor02:#5AA0C3;
+    --cor03:#1D84B8;
+    --cor04:#155F85;
+    --cor05:#092838; 
+}
+
+body{
+    background-color:var(--cor01);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor04), var(--cor05));
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+header > h1{
+    font-family: 'Bebas Neue';
+    font-weight: lighter;
+}
+
+nav{
+    text-align: left;
+    font-weight: bolder;
+    padding-left: 10px;
+    box-shadow: 0px 7px 7px #092838ab;
+}
+nav > a{
+    padding: 5px;
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+nav > a:hover{
+    background-color: var(--cor02);
+    color: var(--cor05);
+}
+
+main{
+    background-color: white;
+    min-width: 320px;
+    max-width: 700px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0px 0px 10px #092838;
+}
+
+main > h1,h2 {
+    font-family: 'android', helvetica;
+    color: var(--cor05);
+    background-image: linear-gradient(to right,#5aa0c39d, #6dc2ed9a, white );
+    text-indent: 5px;
+}
+main  p{
+    text-align: justify;
+    text-indent: 15px;
+    line-height: 1.5em;
+}
+main  a{
+    text-decoration: none;
+    background-color: var(--cor01);
+    color: var(--cor05);
+    font-weight: bold;
+    padding: 1px 3px;
+}
+main a:hover{
+    text-decoration: underline;
+    background-color: var(--cor05);
+    color: var(--cor01); 
+}
+img{
+    max-width: 700px;
+    width: 100%;
+}
+img.pequeno{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+section{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor05);
+    padding: 15px;
+    margin: 0px -15px 0px -15px;
+}
+
+aside{
+    background-color: var(--cor01) ;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 8px #09283896;
+}
+aside > ul{
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
+h3{
+    background-color: var(--cor04);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+footer{
+    background-color: var(--cor05);
+    color: var(--cor01);
+    text-align: center;
+    padding: 2px;
+}
